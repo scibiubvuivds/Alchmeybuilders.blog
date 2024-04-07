@@ -1,0 +1,2256 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js no-svg" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var gform;
+        gform || (document.addEventListener("gform_main_scripts_loaded", function() {
+            gform.scriptsLoaded = !0
+        }), window.addEventListener("DOMContentLoaded", function() {
+            gform.domLoaded = !0
+        }), gform = {
+            domLoaded: !1,
+            scriptsLoaded: !1,
+            initializeOnLoaded: function(o) {
+                gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o)
+            },
+            hooks: {
+                action: {},
+                filter: {}
+            },
+            addAction: function(o, n, r, t) {
+                gform.addHook("action", o, n, r, t)
+            },
+            addFilter: function(o, n, r, t) {
+                gform.addHook("filter", o, n, r, t)
+            },
+            doAction: function(o) {
+                gform.doHook("action", o, arguments)
+            },
+            applyFilters: function(o) {
+                return gform.doHook("filter", o, arguments)
+            },
+            removeAction: function(o, n) {
+                gform.removeHook("action", o, n)
+            },
+            removeFilter: function(o, n, r) {
+                gform.removeHook("filter", o, n, r)
+            },
+            addHook: function(o, n, r, t, i) {
+                null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+                var e = gform.hooks[o][n];
+                null == i && (i = n + "_" + e.length), gform.hooks[o][n].push({
+                    tag: i,
+                    callable: r,
+                    priority: t = null == t ? 10 : t
+                })
+            },
+            doHook: function(n, o, r) {
+                var t;
+                if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[n][o] && ((o = gform.hooks[n][o]).sort(function(o, n) {
+                        return o.priority - n.priority
+                    }), o.forEach(function(o) {
+                        "function" != typeof(t = o.callable) && (t = window[t]), "action" == n ? t.apply(null, r) : r[0] = t.apply(null, r)
+                    })), "filter" == n) return r[0]
+            },
+            removeHook: function(o, n, t, i) {
+                var r;
+                null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function(o, n, r) {
+                    return !!(null != i && i != o.tag || null != t && t != o.priority)
+                }), gform.hooks[o][n] = r)
+            }
+        });
+        /* ]]> */
+    </script>
+
+
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://www.dbcustomhomes.ca/content/themes/david-bernstein-custom-homes/style.css" type="text/css" media="screen" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="author" href="https://www.dbcustomhomes.ca/content/themes/david-bernstein-custom-homes/humans.txt" />
+    <link rel="pingback" href="https://www.dbcustomhomes.ca/wordpress/xmlrpc.php" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75Z65DW9MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-75Z65DW9MR');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-753252116"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-753252116');
+    </script>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+    <script data-no-defer="1" data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer data-cookieconsent="ignore">
+        var ctPublicFunctions = {
+            "_ajax_nonce": "0d2f0018db",
+            "_rest_nonce": "de74b122c5",
+            "_ajax_url": "\/wordpress\/wp-admin\/admin-ajax.php",
+            "_rest_url": "https:\/\/www.dbcustomhomes.ca\/wp-json\/",
+            "data__cookies_type": "none",
+            "data__ajax_type": "rest",
+            "text__wait_for_decoding": "Decoding the contact data, let us a few seconds to finish. Anti-Spam by CleanTalk",
+            "cookiePrefix": "",
+            "wprocket_detected": false
+        }
+    </script>
+
+    <script data-no-defer="1" data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer data-cookieconsent="ignore">
+        var ctPublic = {
+            "_ajax_nonce": "0d2f0018db",
+            "settings__forms__check_internal": "0",
+            "settings__forms__check_external": "0",
+            "settings__forms__search_test": "1",
+            "blog_home": "https:\/\/www.dbcustomhomes.ca\/",
+            "pixel__setting": "3",
+            "pixel__enabled": true,
+            "pixel__url": "https:\/\/moderate2-v4.cleantalk.org\/pixel\/b607a2b4a667a45ed30ff62c977ee914.gif",
+            "data__email_check_before_post": "1",
+            "data__cookies_type": "none",
+            "data__key_is_ok": true,
+            "data__visible_fields_required": true,
+            "data__to_local_storage": {
+                "apbct_urls": "{\"www.dbcustomhomes.ca\/?gad_source=1&gclid=EAIaIQobChMIrIKagMmmhQMVh0p_AB3EsQAfEAAYASAAEgJSofD_BwE\":[1712165361]}"
+            },
+            "wl_brandname": "Anti-Spam by CleanTalk",
+            "wl_brandname_short": "CleanTalk",
+            "ct_checkjs_key": "f948477aefe9625f6a4ee9381ee9ca65437af420414e0c7e25c766d98b14f5e4",
+            "emailEncoderPassKey": "836898606fe7f0817d077a3c72efcdfe"
+        }
+    </script>
+
+    <!-- This site is optimized with the Yoast SEO plugin v22.4 - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>Alchmeybuilders</title>
+    <meta name="description" content="With the highest level of innovation in the modern build industry, we craft custom homes that are luxurious, functional, and sustainable." />
+    <link rel="canonical" href="https://www.dbcustomhomes.ca/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Alchmeybuilders" />
+    <meta property="og:description" content="With the highest level of innovation in the modern build industry, we craft custom homes that are luxurious, functional, and sustainable." />
+    <meta property="og:url" content="https://www.dbcustomhomes.ca/" />
+    <meta property="og:site_name" content="Alchmeybuilders" />
+    <meta property="article:modified_time" content="2024-04-03T16:02:26+00:00" />
+    <meta property="og:image" content=content/uploads/2021/12/Alchmeybuilders1.png />
+    <meta property="og:image:width" content="1601" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" class="yoast-schema-graph">
+        {
+            "@context": "https://schema.org",
+            "@graph": [{
+                "@type": "WebPage",
+                "@id": "https://www.dbcustomhomes.ca/",
+                "url": "https://www.dbcustomhomes.ca/",
+                "name": "Alchmeybuilders",
+                "isPartOf": {
+                    "@id": "https://dbcustomhomes.staging.pxlcrv.co/#website"
+                },
+                "primaryImageOfPage": {
+                    "@id": "https://www.dbcustomhomes.ca/#primaryimage"
+                },
+                "image": {
+                    "@id": "https://www.dbcustomhomes.ca/#primaryimage"
+                },
+                "thumbnailUrl": content/uploads/2021/12/Alchmeybuilders1.png,
+                "datePublished": "2021-10-18T07:30:42+00:00",
+                "dateModified": "2024-04-03T16:02:26+00:00",
+                "description": "With the highest level of innovation in the modern build industry, we craft custom homes that are luxurious, functional, and sustainable.",
+                "breadcrumb": {
+                    "@id": "https://www.dbcustomhomes.ca/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [{
+                    "@type": "ReadAction",
+                    "target": ["https://www.dbcustomhomes.ca/"]
+                }]
+            }, {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "https://www.dbcustomhomes.ca/#primaryimage",
+                "url": content/uploads/2021/12/Alchmeybuilders1.png,
+                "contentUrl": content/uploads/2021/12/Alchmeybuilders1.png,
+                "width": 1601,
+                "height": 1200,
+                "caption": "Williamson &amp; Williamson"
+            }, {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.dbcustomhomes.ca/#breadcrumb",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home"
+                }]
+            }, {
+                "@type": "WebSite",
+                "@id": "https://dbcustomhomes.staging.pxlcrv.co/#website",
+                "url": "https://dbcustomhomes.staging.pxlcrv.co/",
+                "name": "Alchmeybuilders",
+                "description": "",
+                "potentialAction": [{
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://dbcustomhomes.staging.pxlcrv.co/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }],
+                "inLanguage": "en-US"
+            }]
+        }
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+
+    <link rel="alternate" type="application/rss+xml" title="Alchmeybuilders &raquo; Home Comments Feed" href="https://www.dbcustomhomes.ca/sample-page/feed/" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/www.dbcustomhomes.ca\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(i, n) {
+            var o, s, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e,
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function(e, t) {
+                    return e === r[t]
+                })
+            }
+
+            function u(e, t, n) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
+                }
+                return !1
+            }
+
+            function f(e, t, n) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+                    a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+                return e.forEach(function(e) {
+                    o[e] = t(a, e, n)
+                }), o
+            }
+
+            function t(e) {
+                var t = i.createElement("script");
+                t.src = e, t.defer = !0, i.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function(e) {
+                i.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function(t) {
+                var n = function() {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(a.onmessage = function(e) {
+                            c(n = e.data), a.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = f(s, u, p))
+                }
+                t(n)
+            }).then(function(e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+                    n.DOMReady = !0
+                }
+            }).then(function() {
+                return e
+            }).then(function() {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+        /* ]]> */
+    </script>
+    <link rel='stylesheet' id='app-css' href='https://www.dbcustomhomes.ca/content/themes/david-bernstein-custom-homes/public/css/app.css?id=edd373f6ac1e5daca044' type='text/css' media='all' />
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://www.dbcustomhomes.ca/wordpress/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+    <style id='classic-theme-styles-inline-css' type='text/css'>
+        /*! This file is auto-generated */
+
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        body .is-layout-grid>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='ct_public_css-css' href='https://www.dbcustomhomes.ca/content/plugins/cleantalk-spam-protect/css/cleantalk-public.min.css?ver=6.29.1' type='text/css' media='all' />
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script type="text/javascript" data-pagespeed-no-defer src="https://www.dbcustomhomes.ca/content/plugins/cleantalk-spam-protect/js/apbct-public-bundle.min.js?ver=6.29.1" id="ct_public_functions-js"></script>
+    <link rel="https://api.w.org/" href="https://www.dbcustomhomes.ca/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://www.dbcustomhomes.ca/wp-json/wp/v2/pages/2" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.dbcustomhomes.ca/wordpress/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.4.3" />
+    <link rel='shortlink' href='https://www.dbcustomhomes.ca/' />
+    <link rel="alternate" type="application/json+oembed" href="https://www.dbcustomhomes.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dbcustomhomes.ca%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://www.dbcustomhomes.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dbcustomhomes.ca%2F&#038;format=xml" />
+    <link rel="icon" href=content/uploads/2021/12/Alchmeybuilders1.png sizes="32x32" />
+    <link rel="icon" href=content/uploads/2021/12/Alchmeybuilders1.png sizes="192x192" />
+    <link rel="apple-touch-icon" href=content/uploads/2021/12/Alchmeybuilders1.png />
+    <meta name="msapplication-TileImage" content="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Logo Animation GIF.gif" />
+    <style type="text/css" id="wp-custom-css">
+        @media only screen and (min-width: 768px) {
+            .page.process .svg-bground svg {
+                position: absolute;
+                left: -6px;
+                top: -1px;
+            }
+            .post-type-portfolio .hero .overlay {
+                background: linear-gradient( 90deg, rgb(39 39 39 / 87%) 0%, rgb(39 39 39 / 71%) 15%, rgb(39 39 39 / 72%) 48%, rgba(255, 255, 255, 0) 80%);
+                width: 100%;
+            }
+            .footer {
+                margin-top: 1px;
+            }
+            /* 	HOMEPAGE */
+            .our-partners .wrapper::before {
+                display: none;
+            }
+            .our-mission .background .our-left {
+                bottom: 30px;
+                left: -190px;
+            }
+            /* 	TEAM PAGE */
+            .about-us .image-wrapper {
+                padding-left: 140px;
+            }
+            /* body .contacts {
+	padding: 0 0 85px 241px;
+}
+ */
+            .arrow-link-wrapper {
+                margin-left: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .team-block .wrapper-mobile .block .image-wrapper {
+                overflow-y: unset;
+            }
+        }
+
+        .svg-wrapper svg {
+            opacity: 0;
+        }
+
+        /* FIX PARTNERS LOGOS */
+
+        .our-partners-action {
+            background-color: transparent;
+            background-position: left bottom;
+        }
+
+        @media only screen and (min-width: 950px) {
+            .map {
+                width: 31%;
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        @media only screen and (min-width: 1400px) {
+            .map {
+                width: 41%;
+            }
+        }
+
+        /* MOBILE */
+
+        @media only screen and (max-width: 768px) {
+            .videoblock .circle .text {
+                display: none;
+            }
+            .videoblock .circle:after {
+                content: '►';
+                display: block;
+                color: white;
+                transform: translateX(-50%);
+                left: 50%;
+                position: absolute;
+                font-size: 1.5em;
+            }
+        }
+
+        header .top .bground {
+            background: linear-gradient( 180deg, rgb(39 39 39) 0%, rgb(39 39 39 / 80%) 60%, rgb(39 39 39 / 62%) 76%, rgb(39 39 39 / 0%) 100%);
+        }
+
+        .project-slider .more .swiper .swiper-button-prev {
+            left: 22%;
+        }
+
+        .project-slider .more .swiper .swiper-button-next {
+            right: 22%;
+        }
+
+        .hero-main .title-wrapper {
+            margin-top: 4em;
+        }
+    </style>
+
+</head>
+
+<body class="home page-template-default page page-id-2" data-template="base.twig" data-barba="wrapper">
+    <div class="preloader">
+        <div class='logo'>
+            <img src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\cropped-logo-32x32.png" alt="Alchmeybuilders logo">
+        </div>
+    </div>
+
+    <header id="header" class="header" style="display:none">
+        <div class="top">
+            <div class="bground"></div>
+            <a href="https://www.dbcustomhomes.ca" rel="home" class='logo'>
+            <img src=content/uploads/2021/12/Alchmeybuilders1.p alt="">
+        </a>
+
+           
+
+                
+</svg>
+ </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main role="main" class="content-wrapper" data-barba="container" data-barba-namespace="post_2">
+        <section class="hero-main">
+            <div class="container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+
+                <div class="title-wrapper" data-aos="fade-right" data-aos-duration="1500">
+                    <h1><em>The</em> future<br /> of modern <em>luxury</em></h1>
+
+                </div>
+
+             
+
+            <div class="background-wrapper">
+                <div class="background" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100">
+                    <div class="svg-bground">
+                        <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+                        <html>
+
+                        <body><svg class="vector hero" preserveaspectratio="xMinYMin slice" viewbox="0 0 1440 872" fill="none" xmlns="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Logo Animation GIF.gif">
+<path opacity="0.2" d="M731 231.486V261.501L798.5 275.475M859 263.385V288.001L798.5 275.475M798.5 248.308V275.475" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M713 227L713.517 263.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M667.5 245.501V270.501L707 258.001V230.309" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M661 279.5L713.517 263.5L871.5 297" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M394 250V279.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M263.5 262V228.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M263.5 228.5L394 250" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M169.5 286.788V248.229" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M224 293.094V256.213" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M337.5 306.226V271.924" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M435.453 317.559V285.635" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M493.5 324.273C493.5 312.538 493.5 305.958 493.5 294.223" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M603.5 271.001L542 257.297" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M567.127 244.5L661 264.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M661 248.001L597.592 228.986" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M661 368.392V341.5V312V293.5V279.5V264.5V248" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M629 347.5L661 341.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M629 320L661 312" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M713 227L707 230.308L667.5 245.5L661 248L629 264.5L618.5 263.5L603.5 271L585 280.177" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M798.5 248.307L844.8 235.461" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M763.4 211.98L720 228.744" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M871.5 266.501L859 263.385L798.5 248.308L731 231.486L720 228.745L713 227.001L640.5 209.635" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M871.5 266.5L915.5 255.855" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M915.5 255.856V211.695" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M846 187.23L844.8 235.462" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M763.399 211.981L764 158.365" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M567.127 244.499V199.699" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M596 182.055L597.591 228.985" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M640.5 154.861V209.634" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M520 268.5L542 257.296L567.127 244.5L597.591 228.986L640.5 209.634L682 188.5L763.4 211.981L844.8 235.461L915.5 255.856L942 263.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M682 129.5L764 158.365L846 187.23L915.5 211.695L967.5 230V234.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M520 268.5V228.5L567.127 199.7L596 182.056L640.5 154.861L682 129.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M603.5 283.5L585 280.177L520 268.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M629 288L661 293.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M629 264.5C629 273.323 629 281.054 629 288C629 297.964 629 307.344 629 320V347.5C629 347.5 629 364.574 629 372.385" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M618.5 263.5V373.695" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M603.5 271V283.5V310.5V375.567" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M224 297.5L263.5 302.08L397 317.558L424.5 320.746L437.5 322.254L603.5 341.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M106.5 279.5L169.5 286.789L224 293.094L337.5 306.225L435.453 317.558L493.5 324.274L603.5 337" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M124.5 321L106.5 279.5V239L169.5 248.229L224 256.213L263.5 262L337.5 271.923L394 279.5L435.453 285.634L493.5 294.223L603.5 310.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M805 375.601V297L830 302.5V378.004" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M714.984 366.949L713.518 263.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M689.5 261.5V364.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M552 307.719V383" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M508.758 322.254V389.181" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M475 333.602V393.792" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M451.5 407V397V341.5L475 333.601L508.758 322.254L552 307.718L689.5 261.5L871.5 299.898L1154 359.5V394" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1446 114L1417.5 121.177L1252 162.855L1126 194.585L1020 221.279L967.5 234.5L942 240.5V263.5L935.5 265.021L871.5 280" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1417.5 121.178L1412.5 195.812" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1252 162.855L1249.5 227.173" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1126 194.586V250.934" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1020 271.328V221.279" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M935.5 265.021V287.585" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M871.5 266.5V280V297V299.898V310.5V381.993" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M891 306.863V383.868" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M955 294.926V381.094" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1010.89 284.5V378.681" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1069.5 273.566V376.15" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1140 260.418V395.368" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1140 260.418L1126 250.934" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1249.5 227.172L1262 237.356" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1421.5 207.862L1412.5 195.811" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M871.5 299.898L935.5 287.585L1020 271.327L1126 250.933L1249.5 227.172L1412.5 195.811L1450.5 188.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M871.5 310.5L891 306.863L955 294.925L1010.89 284.5L1069.5 273.567L1140 260.417L1219.5 245.215L1262 237.356L1312 228.111L1421.5 207.862L1450.5 202.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1219.5 245.215V397.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1312 228.111L1305 395.909" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1407.5 394.001L1414.5 300.932L1421.5 207.863" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1414.5 300.931L1461.5 296" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1219.5 397.5L1305 395.908L1407.5 394" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1115 396L1140 395.367L1194 394L1218 397.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1218 397.5V407.5V422V436.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1115 407.5L1194 405L1218 407.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1218 422L1450.5 427.975" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1218 436.5C1308.8 439.038 1359.7 440.462 1450.5 443" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1194 458.5V405V394" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1158.5 458.634V444.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1129.5 432V444.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1115 432H1129.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1158.5 444.5H1129.5H1115" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M848.5 469L1115 460.088L1158.5 458.634L1194 458.5H1215L1473.5 465.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1073 376L1069.5 376.151L1010.89 378.681L955 381.094L934 382" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1073 376L1115 384.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1115 384.5V396V407.5V432V444.5V460.088" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1115 396L1073 391" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1073 432V391V376" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M934 396L1073 391" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M934 382V388V396V427.975" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M689.5 423.217V364.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M451.5 397L475 393.791L508.758 389.181L552 383L661 368.392L689.5 364.5L714.984 366.949L805 375.601L830 378.004L871.5 381.993L891 383.867L934 388" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M451.5 407V397V341.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M437.5 322.254V407" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M424.5 320.746V407" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M397 317.559V407.001" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M285 370.5V410.535" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M263.5 382.5L285 370.5H307V410.059" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M263.5 302.08V382.5V411" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M216 328L224 297.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M216 328L124.5 321" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M360 407V472.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M318.5 409.811V461.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M224 460.723L318.5 461.5L360 472.5H462L806.5 513" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M848.5 492.5V488V469V425.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M216 413.5L224 411.962L263.5 411L285 410.535L307 410.059L318.5 409.81L360 407H397H424.5H437.5H451.5H465.5V420L689.5 423.217L848.5 425.5L934 427.975L1073 432" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M224 460.722V411.962V297.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M216 454.678V441.5V413.5V328" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M197.5 441.5L216 454.678L224 460.722" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M3 441.5H159H216" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M251 498L385 493.5L364 487L244 491.5L251 498Z" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M262.5 509.5L417 502L391 495L252.5 500L262.5 509.5Z" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M265 512L278 527L459 514L424.5 503.5L265 512Z" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M303 548.5L522 530.5L465.5 516L282.5 530.5L303 548.5Z" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M350 587.5L622 556L532.5 533L309.5 553L350 587.5Z" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M364 597.5L451.5 683.5L806.5 610L641.5 562.5L364 597.5Z" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M842.5 534.5L677 558L845.5 600L1016.5 560L842.5 534.5Z" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M848.5 469L1187.5 484.73L1473.5 498" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M848.5 488L1187.5 516" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M806.5 496.5L848.5 492.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M806.5 529.5V521.25V513V496.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M806.5 496.5L1156 529.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M848.5 492.5L1187.5 524L1156 529.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1187.5 567.501V516.001V484.73" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1187.5 567.5L1480.5 600.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M1156 575.5V567.5V529.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M806.5 521.25L1156 567.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M185 441.5L229 484L360 480L658.5 554.5L831 531L806.5 529.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M159 441.5L48 495.5L218.5 489.5L379 730L1055.5 560L1156 575.5L1187.5 567.5" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M682.5 130V189" stroke="#C3BED1" stroke-miterlimit="10"></path>
+<path opacity="0.2" d="M682.5 130V189" stroke="#C3BED1" stroke-miterlimit="10"></path>
+</svg></body>
+
+                        </html>
+
+                    </div>
+                    <div class="images" style="
+        -webkit-mask-image: linear-gradient(to left bottom, #272727 0.53%, rgba(39, 39, 39, 0.11) 150%);
+        mask-image: linear-gradient(-65.89deg, #272727 0.53%, rgba(39, 39, 39, 0.11) 150%);
+
+              ">
+                        <div class="image  " style="background-image: url(https://www.dbcustomhomes.ca/content/uploads/2021/12/jangal.g); opacity: 0;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-link-wrapper ">
+                <a href="" class="arrow-link">
+  <svg xmlns="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Logo Animation GIF.gif" width="8" height="9" viewBox="0 0 8 9" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.55708 4.81718C0.271021 5.04521 0.269348 5.47938 0.553642 5.70961L3.87397 8.39848C3.94745 8.45799 4.05255 8.45799 4.12603 8.39848L7.44636 5.70961C7.73065 5.47938 7.72898 5.04521 7.44292 4.81718C7.24123 4.65641 6.95692 4.65038 6.7486 4.80248L4 6.8092L1.2514 4.80248C1.04308 4.65038 0.758771 4.65641 0.55708 4.81718Z" fill="currentColor"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9995 0.5C3.67266 0.5 3.40771 0.76495 3.40771 1.09178L3.40772 6.51251C3.40772 6.83934 3.67266 7.10429 3.9995 7.10429C4.32633 7.10429 4.59128 6.83934 4.59128 6.5125L4.59128 1.09178C4.59128 0.764949 4.32633 0.5 3.9995 0.5Z" fill="currentColor"/>
+  </svg>
+</a>
+
+                <div class="arrow-text"><span>Scroll to discover</span></div>
+            </div>
+        </section>
+
+
+       
+
+        <section class="container about-us    top  " style="background-image: url()" id="about">
+            <div class="image-wrapper ">
+                <div class="big-image title-wrapper  has-vector   " data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+                    <svg class="vector" width="573" height="448" viewBox="0 0 573 448" fill="none" xmlns="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Logo Animation GIF.gif">
+<path opacity="0.3" d="M1.00013 447.5L1 18.3933M1.09788 8.82041L1.17272 1.5L572 75.2672V78.6458L570.477 78.4587M1.09788 8.82041L1 18.3933M1.09788 8.82041L570.477 78.4587M1 18.3933L59.3069 24.7911M570.477 83.7138V78.4587M570.477 83.7138L564.893 88.2187V163.112M570.477 83.7138L533.929 79.5009M533.929 79.5009V160.193M533.929 79.5009L502.964 75.9316M502.964 75.9316V157.081M502.964 75.9316L471.999 72.3623M471.999 72.3623V155.007M471.999 72.3623L439.004 68.5589M439.004 68.5589V151.895M439.004 68.5589L404.383 64.5681M404.383 64.5681V149.302M404.383 64.5681L368.953 60.4841M368.953 60.4841V146.191M368.953 60.4841L330.882 56.0956M330.882 56.0956V143.079M330.882 56.0956L291.288 51.5316M291.288 51.5316V139.462M291.288 51.5316L250.171 46.792M250.171 46.792V136.337M250.171 46.792L205.501 41.6429M205.501 41.6429V132.707M205.501 41.6429L159.307 36.3182M159.307 36.3182V128.558M159.307 36.3182L110.576 30.7009M110.576 30.7009V123.695M110.576 30.7009L59.3069 24.7911M59.3069 24.7911V120.779" stroke="#C3BED1"/>
+</svg> <img decoding="async" src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\250x320.jpg" alt="Alchmeybuilders is not your typical luxury custom home builder.">
+                </div>
+                <div class="small-image">
+                    <img decoding="async" src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\250x320.jpg" alt="Our clients get more and expect more out of a custom home build." data-aos="fade-up" data-aos-offset="300"
+                        data-aos-duration="1500" data-aos-delay="300">
+                </div>
+            </div>
+            <div class="wrapper " data-aos="fade-left" data-aos-offset="300" data-aos-duration="800">
+                <div class="content">
+                    <p class="prev-title" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500">
+                    
+                    </p>
+                    <div class="title-wrapper" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500" data-aos-delay="300">
+                        <h1>Building<br />
+                            <em>modern</em></h1>
+
+                    </div>
+                    <div class="text-wrapper main-text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500" data-aos-delay="600">
+                        <p>We are not your typical custom home builder.<br /> Built over decades of experience, our high-performance, integrative systems and processes offer an advanced opportunity for our clients to get more and expect more out of a custom
+                            home build. With a selective and personalized approach to the homes we build, every detail, design element and feature is built to suit your lifestyle, creating a truly customized experience.</p>
+                        <p>Along with a strong and dedicated network of trades and suppliers, we have built a team of in-house professionals that live and breathe the modern home building world. We take a cutting-edge approach to how we operate and in what
+                            we build, creating life-changing <a href="/portfolio/">luxury custom homes</a> that truly elevate the everyday.</p>
+
+                    </div>
+
+                    <div class="link-wrapper">
+                        
+                        <div class=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container our-mission" data-aos="fade-up" data-aos-offset="300" data-aos-duration="800" id="mission">
+            <div class="background">
+                <div class="vector-wrapper">
+                    <svg class="vector  our-left" width="609" height="843" viewBox="0 0 609 843" fill="none" xmlns="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Logo_Animation.mp4">
+<g opacity="0.3">
+<path d="M243.806 382.658L206.556 365.642L196.439 364.723" stroke="#C3BED1"/>
+<path d="M177.124 325.633L69.0531 315.516L35.0222 344.488" stroke="#C3BED1"/>
+<path d="M151.031 512.516L117 541.488" stroke="#C3BED1"/>
+<path d="M121.019 143.521V291.142M121.019 291.142L243.346 307.697V286.083M121.019 291.142L143.553 287.667M225.411 275.046L204.717 278.237M143.553 169.734V287.667M143.553 287.667L172.985 283.129M172.985 283.129V204.225M172.985 283.129L204.717 278.237M204.717 278.237V241.475" stroke="#C3BED1"/>
+<path d="M322.445 408.87V391.633L2.3711 379.438" stroke="#C3BED1"/>
+<path d="M207.936 387.717L207.936 495.328" stroke="#C3BED1"/>
+<path d="M150.911 384.957L150.911 512.803" stroke="#C3BED1"/>
+<path d="M195.979 338.049V387.256" stroke="#C3BED1"/>
+<path d="M177.124 298.5V351.846" stroke="#C3BED1"/>
+<path d="M259 525.5L259 596.5" stroke="#C3BED1"/>
+<path d="M243.346 355.984V286.543L1.91109 0.5" stroke="#C3BED1"/>
+<path d="M476.5 528L208 495.5" stroke="#C3BED1"/>
+<path d="M342 535.5L151 512.5" stroke="#C3BED1"/>
+<path d="M0.894765 679.854L607.932 486L555.5 486" stroke="#C3BED1"/>
+</g>
+</svg> <svg class="vector our-right" width="311" height="643" viewBox="0 0 311 643" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<path d="M92.5657 404L126.126 422.5L135.241 423.5" stroke="#C3BED1"/>
+<path d="M152.643 426L250.009 437L280.669 405.5" stroke="#C3BED1"/>
+<path d="M203.19 556V463.5M203.19 463.5L92.98 445.5V469M203.19 463.5L182.888 467.278M109.139 481L127.783 477.531M182.888 540.5V467.278M182.888 467.278L156.372 472.211M156.372 472.211V519M156.372 472.211L127.783 477.531M127.783 477.531V496.5" stroke="#C3BED1"/>
+<path d="M21.7163 370.5V389.24L310.086 407.5" stroke="#C3BED1"/>
+<path d="M124.469 395V281.5" stroke="#C3BED1"/>
+<path d="M175.845 398.5L175.845 262.5" stroke="#C3BED1"/>
+<path d="M135.655 452.5V396" stroke="#C3BED1"/>
+<path d="M152.643 455.5V397.5" stroke="#C3BED1"/>
+<path d="M92.98 393V468.5L310.5 642.5" stroke="#C3BED1"/>
+<path d="M94.2229 277L310.5 239.5" stroke="#C3BED1"/>
+<path d="M94.2229 277L124.469 281.5" stroke="#C3BED1"/>
+<path d="M22.1305 369.5L309.671 376M22.1305 369.5L310.086 0.5M22.1305 369.5L1 397L41.6037 429" stroke="#C3BED1"/>
+</g>
+</svg> </div>
+            </div>
+            <div class="wrapper">
+                <h2 class="title" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1200">
+                    Our Mission
+                </h2>
+                <div class="text" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1600">
+                    <p>“Welcome to Alchemy Builders - Where Dreams Take Shape and Quality Comes Standard. At Alchemy Builders, we are more than just home builders - we are dream weavers, dedicated to crafting homes that reflect your unique style and vision. With a focus on quality, efficiency, and peace of mind, we bring your dream home to life within your budget, using trusted tradespeople with decades of industry experience.                        ”</p>
+
+                </div>
+                <img decoding="async" src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Alchmeybuilders1.png" alt=" logo" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+            </div>
+        </section>
+
+
+        <section class="container our-uniqueness">
+
+            <div class="wrapper">
+                <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-duration="800">
+                    <p class="prev-title" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1100">
+                        Our Uniqueness
+                    </p>
+                    <div class="title-wrapper" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1400">
+                        <h2>Quality Homes,<br /> Quality Living
+                            <br />
+                            <em>homes</em></h2>
+
+                    </div>
+                    <div class="text-wrapper main-text" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1700">
+                        <p>As a <a href="https://www.dbcustomhomes.ca/wordpress/building-modern/">modern custom home builder</a>,  We believe that the quality of your home directly impacts your quality of life. That's why we are committed to building homes of exceptional quality that stand the test of time.</p>
+                        <p>*Efficiency Redefined*: Time is precious, and we respect that. Our efficient processes and experienced team ensure that your project is completed on time and within budget, without compromising on quality.
+                            - *Trusted Trades, Trusted Results*: Our network of trusted tradespeople, each with over 20 years of industry experience, ensures that your home is built to the highest standards, giving you peace of mind and confidence in the final result.                             <a href="https://www.dbcustomhomes.ca/wordpress/process/">process</a>.
+                            The result is a custom home that costs less to maintain, has less of an impact on the environment, and a far greater impact on your well-being.</p>
+                        
+
+                    </div>
+
+                    <div class="link-wrapper" data-aos="fade-right" data-aos-offset="200" data-aos-duration="2000">
+                        
+                        <div class=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="natural-wrapper" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500">
+                <div class="image-wrapper">
+                    <img decoding="async" src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Web2.jpg" alt="Alchmeybuilders provides sustainable custom home building solutions for our clients."
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="container about-us    " style="background-image: url()" id="about">
+            <div class="image-wrapper ">
+                <div class="big-image title-wrapper   " data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+                    <img decoding="async" src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Web 10.jpg" alt="We are a modern custom home design firm also specializing in custom home building.">
+                </div>
+                <div class="small-image">
+                    <img decoding="async" src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Web 15.jpg" alt="Alchmeybuilders is a luxury modern custom home design firm." data-aos="fade-up"
+                        data-aos-offset="300" data-aos-duration="1500" data-aos-delay="300">
+                </div>
+            </div>
+            <div class="wrapper " data-aos="fade-left" data-aos-offset="300" data-aos-duration="800">
+                <div class="content">
+                    <p class="prev-title" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500">
+
+                    </p>
+                    <div class="title-wrapper" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500" data-aos-delay="300">
+                        <h1>AB DESIGN<br />
+                            <em>integration</em></h1>
+
+                    </div>
+                    <div class="text-wrapper main-text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500" data-aos-delay="600">
+                        <p>Experience world class luxury modern home design with our exclusive Architectural and Interior Design team. Innovation that connects sustainability, functionality and aesthetics. Using the latest in cutting edge 3D rendering software,
+                            virtual reality exploration and BIM home modeling, our client experience is as exciting as it is comprehensive. Our design team works alongside our operations team to ensure building practices, material selection and budget
+                            come together synergistically. From concept to completion, a <a href="https://www.dbcustomhomes.ca/wordpress/process/">design/build</a> scenario allows for a holistic and targeted approach, bringing all elements together in
+                            one place, as your modern home vision becomes reality.</p>
+
+                    </div>
+
+                    <div class="link-wrapper">
+                        
+                        <div class=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container what-we-do">
+            <div class="wrapper" style='background-image:url(https://www.dbcustomhomes.ca/content/uploads/2022/02/modern-luxury-custom-home-builders-in-southern-ontario-700x0-c-default.)'>
+                <div class="content">
+                    <p class="prev-title" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1200">
+                       
+                    </p>
+                    <div class="title-wrapper" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+                        <h2>Why Choose Alchemy Builders?</h2>
+
+                    </div>
+                    <div class="content-wrapper" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000">
+                        <div class="item  active ">
+                            <div class="id"><svg xmlns="http://www.w3.org/2000/svg" width="47" height="42" viewBox="0 0 47 42" fill="none">
+<path d="M11.2931 40.3302C12.3409 40.7592 13.5439 40.9736 14.9022 40.9736C16.2605 40.9736 17.4441 40.7592 18.4531 40.3302C19.5009 39.9013 20.3547 39.2385 21.0144 38.3417C21.6741 37.4059 22.2174 36.3921 22.6443 35.3003C23.0712 34.2085 23.3817 32.8438 23.5757 31.2061C23.8086 29.5685 23.9638 27.9893 24.0414 26.4686C24.119 24.9479 24.1578 23.1153 24.1578 20.9708C24.1578 18.8262 24.119 17.0131 24.0414 15.5314C23.9638 14.0107 23.8086 12.4315 23.5757 10.7939C23.3817 9.11721 23.0712 7.7525 22.6443 6.69972C22.2174 5.60794 21.6741 4.61365 21.0144 3.71683C20.3547 2.78103 19.5009 2.09867 18.4531 1.66976C17.4441 1.24085 16.2605 1.02639 14.9022 1.02639C13.5439 1.02639 12.3409 1.24085 11.2931 1.66976C10.2841 2.09867 9.44969 2.78103 8.78996 3.71683C8.13023 4.61365 7.58692 5.60794 7.16003 6.69972C6.73315 7.7525 6.40328 9.11721 6.17044 10.7939C5.9764 12.4315 5.84057 14.0107 5.76295 15.5314C5.68534 17.0131 5.64653 18.8262 5.64653 20.9708C5.64653 23.1153 5.68534 24.9479 5.76295 26.4686C5.84057 27.9893 5.9764 29.5685 6.17044 31.2061C6.40328 32.8438 6.73315 34.2085 7.16003 35.3003C7.58692 36.3921 8.13023 37.4059 8.78996 38.3417C9.44969 39.2385 10.2841 39.9013 11.2931 40.3302ZM25.6713 35.6512C22.9548 39.5504 19.3651 41.5 14.9022 41.5C10.4393 41.5 6.83017 39.5504 4.07482 35.6512C1.35827 31.752 0 26.8585 0 20.9708C0 15.083 1.35827 10.209 4.07482 6.34879C6.79136 2.4496 10.4005 0.5 14.9022 0.5C19.4039 0.5 23.013 2.4496 25.7296 6.34879C28.4461 10.209 29.8044 15.083 29.8044 20.9708C29.8044 26.8585 28.4267 31.752 25.6713 35.6512Z" fill="white"/>
+<path d="M47 40.9151H45.7193C45.2537 40.9151 44.5745 40.8956 43.6819 40.8566C42.7894 40.7787 42.0326 40.7397 41.4117 40.7397C40.7908 40.7397 40.0146 40.7787 39.0832 40.8566C38.1906 40.8956 37.5115 40.9151 37.0458 40.9151H34.6009V40.4472H35.2995C36.6577 40.4472 37.5891 40.2523 38.0936 39.8623C38.6369 39.4334 38.9086 38.5951 38.9086 37.3474V9.15621C38.9086 8.02544 38.5205 7.46006 37.7443 7.46006C37.3175 7.46006 36.5995 7.69401 35.5905 8.16191L34.3099 8.80528L34.077 8.33738C36.2891 7.2456 38.3071 5.93937 40.131 4.41869C41.955 2.898 43.061 1.63077 43.4491 0.616978H43.8566V37.1134C43.8566 38.4391 44.0506 39.336 44.4387 39.8039C44.8656 40.2328 45.6805 40.4472 46.8836 40.4472H47V40.9151Z" fill="white"/>
+</svg></div>
+                            <h3 class="name">Customization at its Finest</h3>
+                            <p class="text main-text">Your home should be a reflection of your unique style and needs. We offer customizable solutions to ensure that your dream home is tailored to you.                            </p>
+                            <div class="link-wrapper">
+                                
+                                <div class=""></div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="id"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="45" viewBox="0 0 56 45" fill="none">
+<path d="M11.1558 40.1874C12.1909 40.6148 13.3793 40.8285 14.721 40.8285C16.0628 40.8285 17.2321 40.6148 18.2288 40.1874C19.2639 39.76 20.1073 39.0996 20.759 38.206C21.4107 37.2735 21.9474 36.2634 22.3691 35.1755C22.7908 34.0876 23.0975 32.7278 23.2892 31.096C23.5192 29.4642 23.6725 27.8907 23.7492 26.3755C23.8259 24.8603 23.8642 23.0342 23.8642 20.8974C23.8642 18.7605 23.8259 16.9539 23.7492 15.4775C23.6725 13.9623 23.5192 12.3887 23.2892 10.757C23.0975 9.08631 22.7908 7.72649 22.3691 6.67748C21.9474 5.58963 21.4107 4.5989 20.759 3.7053C20.1073 2.77285 19.2639 2.09294 18.2288 1.66557C17.2321 1.23819 16.0628 1.0245 14.721 1.0245C13.3793 1.0245 12.1909 1.23819 11.1558 1.66557C10.1591 2.09294 9.33483 2.77285 8.68311 3.7053C8.0314 4.5989 7.4947 5.58963 7.07301 6.67748C6.65131 7.72649 6.32545 9.08631 6.09543 10.757C5.90375 12.3887 5.76958 13.9623 5.69291 15.4775C5.61623 16.9539 5.5779 18.7605 5.5779 20.8974C5.5779 23.0342 5.61623 24.8603 5.69291 26.3755C5.76958 27.8907 5.90375 29.4642 6.09543 31.096C6.32545 32.7278 6.65131 34.0876 7.07301 35.1755C7.4947 36.2634 8.0314 37.2735 8.68311 38.206C9.33483 39.0996 10.1591 39.76 11.1558 40.1874ZM25.3593 35.5252C22.6758 39.4104 19.1297 41.353 14.721 41.353C10.3124 41.353 6.74714 39.4104 4.02528 35.5252C1.34176 31.64 0 26.764 0 20.8974C0 15.0307 1.34176 10.1742 4.02528 6.32782C6.70881 2.44261 10.2741 0.5 14.721 0.5C19.168 0.5 22.7333 2.44261 25.4168 6.32782C28.1003 10.1742 29.4421 15.0307 29.4421 20.8974C29.4421 26.764 28.0812 31.64 25.3593 35.5252Z" fill="white"/>
+<path d="M56 36.1662L54.2749 44.5L53.9298 44.4417C53.9682 43.0042 53.7382 42.0329 53.2398 41.5278C52.7798 41.0227 51.8789 40.7702 50.5371 40.7702H30.7557V40.5371L38.4612 32.0868C42.4099 27.6965 45.3426 23.8113 47.2594 20.4311C49.2145 17.051 50.1921 13.5349 50.1921 9.88278C50.1921 6.73576 49.7129 4.48234 48.7545 3.12252C47.8344 1.72384 46.416 1.0245 44.4992 1.0245C42.544 1.0245 41.0106 1.68499 39.8988 3.00596C38.8254 4.28808 37.9054 6.13356 37.1386 8.54238C36.6403 10.0965 35.8352 10.8735 34.7235 10.8735C34.1484 10.8735 33.6501 10.6793 33.2284 10.2907C32.845 9.90221 32.6533 9.3777 32.6533 8.71722C32.6533 6.89117 33.9184 5.06512 36.4486 3.23907C38.9788 1.41302 41.7006 0.5 44.6142 0.5C47.6811 0.5 50.2879 1.35475 52.4347 3.06424C54.6199 4.77373 55.7125 7.18256 55.7125 10.2907C55.7125 11.9225 55.3866 13.5155 54.7349 15.0695C54.1215 16.6236 53.1631 18.1971 51.8597 19.7901C50.5563 21.383 49.3295 22.7623 48.1794 23.9278C47.0294 25.0545 45.4767 26.5115 43.5216 28.2987C41.5665 30.0859 40.1097 31.4651 39.1513 32.4364L35.471 36.1662H56Z" fill="white"/>
+</svg></div>
+                            <h3 class="name">Design &#038; Stress-Free Experience</h3>
+                            <p class="text main-text">Building a home should be exciting, not stressful. Our transparent communication and dedicated project management team ensure that you are kept informed and involved every step of the way.                            </p>
+                            <div class="link-wrapper">
+                                
+                                <div class=""></div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="id"><svg xmlns="http://www.w3.org/2000/svg" width="61" height="42" viewBox="0 0 61 42" fill="none">
+<path d="M11.4626 40.3302C12.5262 40.7592 13.7473 40.9736 15.126 40.9736C16.5046 40.9736 17.706 40.7592 18.7302 40.3302C19.7937 39.9013 20.6603 39.2385 21.3299 38.3417C21.9996 37.4059 22.551 36.3921 22.9843 35.3003C23.4176 34.2085 23.7327 32.8438 23.9297 31.2061C24.166 29.5685 24.3236 27.9893 24.4024 26.4686C24.4812 24.9479 24.5206 23.1153 24.5206 20.9708C24.5206 18.8262 24.4812 17.0131 24.4024 15.5314C24.3236 14.0107 24.166 12.4315 23.9297 10.7939C23.7327 9.11721 23.4176 7.7525 22.9843 6.69972C22.551 5.60794 21.9996 4.61365 21.3299 3.71683C20.6603 2.78103 19.7937 2.09867 18.7302 1.66976C17.706 1.24085 16.5046 1.02639 15.126 1.02639C13.7473 1.02639 12.5262 1.24085 11.4626 1.66976C10.4385 2.09867 9.59158 2.78103 8.92194 3.71683C8.2523 4.61365 7.70084 5.60794 7.26755 6.69972C6.83425 7.7525 6.49944 9.11721 6.2631 10.7939C6.06615 12.4315 5.92827 14.0107 5.84949 15.5314C5.77071 17.0131 5.73132 18.8262 5.73132 20.9708C5.73132 23.1153 5.77071 24.9479 5.84949 26.4686C5.92827 27.9893 6.06615 29.5685 6.2631 31.2061C6.49944 32.8438 6.83425 34.2085 7.26755 35.3003C7.70084 36.3921 8.2523 37.4059 8.92194 38.3417C9.59158 39.2385 10.4385 39.9013 11.4626 40.3302ZM26.0568 35.6512C23.2995 39.5504 19.6559 41.5 15.126 41.5C10.5961 41.5 6.93274 39.5504 4.13601 35.6512C1.37868 31.752 0 26.8585 0 20.9708C0 15.083 1.37868 10.209 4.13601 6.34879C6.89335 2.4496 10.5567 0.5 15.126 0.5C19.6953 0.5 23.3585 2.4496 26.1159 6.34879C28.8732 10.209 30.2519 15.083 30.2519 20.9708C30.2519 26.8585 28.8535 31.752 26.0568 35.6512Z" fill="white"/>
+<path d="M47.0558 41.5C43.2743 41.5 40.064 40.4667 37.4248 38.4001C34.7856 36.2946 33.4661 34.111 33.4661 31.8495C33.4661 31.1476 33.663 30.5823 34.0569 30.1534C34.4902 29.7244 34.9826 29.51 35.534 29.51C36.7945 29.51 37.6021 30.2898 37.9566 31.8495C39.3746 37.9322 42.388 40.9736 46.9967 40.9736C49.6358 40.9736 51.6841 39.9793 53.1416 37.9907C54.599 35.9632 55.3278 32.9803 55.3278 29.0421C55.3278 25.4548 54.9142 22.9009 54.087 21.3802C53.2992 19.8205 52.0387 19.0407 50.3055 19.0407C49.5571 19.0407 48.592 19.3526 47.4103 19.9765L43.097 22.1405L42.8016 21.6141L48.0011 18.9237C49.7343 18.0269 50.9751 16.8571 51.7235 15.4144C52.472 13.9717 52.8462 11.9636 52.8462 9.39016C52.8462 6.66072 52.4523 4.59415 51.6644 3.19044C50.8766 1.74774 49.3798 1.02639 47.1739 1.02639C43.4712 1.02639 40.9896 3.48288 39.7291 8.39586C39.3352 10.0725 38.4687 10.9108 37.1294 10.9108C36.5779 10.9108 36.0855 10.7159 35.6522 10.326C35.2583 9.93604 35.0614 9.40965 35.0614 8.74679C35.0614 6.91417 36.3416 5.08155 38.9019 3.24893C41.4623 1.41631 44.2393 0.5 47.233 0.5C50.3449 0.5 52.9447 1.29933 55.0323 2.898C57.1594 4.45768 58.223 6.50476 58.223 9.03923C58.223 10.9888 57.4549 12.802 55.9186 14.4786C54.3824 16.1553 52.4129 17.481 50.0101 18.4558C51.1524 18.4168 52.3144 18.5728 53.4961 18.9237C54.6778 19.2356 55.8399 19.7815 56.9822 20.5613C58.1639 21.3022 59.1289 22.394 59.8774 23.8367C60.6258 25.2794 61 26.956 61 28.8666C61 31.4791 60.2516 33.7796 58.7547 35.7682C57.2579 37.7568 55.4656 39.219 53.378 40.1548C51.2903 41.0516 49.1829 41.5 47.0558 41.5Z" fill="white"/>
+</svg></div>
+                            <h3 class="name">Excellence in Every Detail</h3>
+                            <p class="text main-text">From the foundation to the finishing touches, we pay attention to every detail to ensure that your home is a masterpiece of craftsmanship and design.                            </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-small-image">
+                    <div class="small-image">
+                        <div class="svg-wrapper">
+                            <svg class='vector animated what' viewBox="0 0 1440 872" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M289.98 -338.533L411.671 -34.5622V225.522" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M-47.0303 -9.36133L307.632 335.93V854.118L159.817 900.447" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M91.9687 125.967V865.917" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M-47.0303 877.351H40.8257L305.319 818.219" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M262.238 292.107V827.851" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M262.238 442.182L306.244 469.9" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M307.632 335.932V239.844H1120.99V854.12" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M307.632 336.625H1120.88" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M307.632 817.912H1119.15L1374.39 872.732H1446.53" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1120.99 239.843L1371.62 -66.9004H1446.53" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1120.88 336.624L1371.62 80.9277H1446.53" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1389.19 80.9277V869.959" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M-47.0303 900.448H40.8257V76.4238H-47.0303" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M307.632 854.119H1122.54L1305.96 900.448" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1170.77 285.744V829.278" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1212.87 242.646V838.545" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1120.99 474.52L1170.77 440.643" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M583.685 336.625V817.912" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M855.577 336.625V817.912" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M386.702 224.534V-97.6973" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M354.461 225.523V-176.539" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M322.221 224.534V-257.291" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M289.98 318.746V-338.533" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M257.74 286.654V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M225.499 255.968V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M193.258 224.533V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M161.018 191.798V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M128.777 161.001V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M96.5378 129.587V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M64.2972 98.174V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M32.0566 66.76V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M-0.184021 36.2471V-342.23" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M307.632 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M336.708 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M365.784 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M394.859 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M423.936 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M453.012 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M482.088 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M511.165 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M540.241 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M569.317 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M598.394 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M627.47 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M656.546 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M685.622 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M714.699 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M743.775 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M772.851 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M801.927 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M831.004 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M860.08 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M889.156 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M918.232 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M947.309 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M976.385 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1005.46 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1034.54 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1063.61 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1092.69 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1121.77 239.844V335.932" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1400.69 -66.9004V80.6199" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1429.77 -66.9004V80.6199" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1070.59 429.709H371.443V803.899H1070.59V429.709Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1141.59 315.372V214.533" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1162.37 294.036V189.336" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1183.14 273.13V163.156" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1203.92 252.084V137.902" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1224.7 230.604V113.266" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1245.47 210.276V88.0098" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1266.25 188.719V62.4492" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1287.03 167.776V36.2715" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1307.81 146.834V11.9414" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1328.58 125.277V-13.9277" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1349.36 103.719V-40.1055" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1120.34 225.521H301.62V239.842H1120.34V225.521Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1446.53 80.9278H1371.62V-66.9004H1446.53" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1120.34 225.521L1371 -81.6836" stroke="#C3BED1" stroke-miterlimit="10"/>
+</svg> <svg class="vector animated what" viewBox="0 0 1469 877" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path  d="M1051.04 645.5L1287.24 626.5L1372.07 639" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1390.5 222.033L1392 448.037" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1379 217.1L1380.5 434.663L1380.66 444.768" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1369 407.5L1367.11 212" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1354 206.373L1356 403.577" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1341.5 201.01L1343 399.653" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1329.25 195.754L1330.5 395.881" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1317.5 391.958L1316 190.068" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1304 387.885L1303 184.492" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1291 383.961L1289.5 178.699" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1278.03 383.551L1276 172.906" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1263.5 387.033L1262 166.9" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1249 390.509L1248 160.895" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1235.5 391.493L1233.5 154.672" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1220 387.458V148.881" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1205 383.551V142.443" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1190 379.645V136.008" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1172.5 128.5L1176 376" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1162.5 411.24V385.43L1158 128.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1402 226.969L1404 451.497" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1414.5 232.332V454.523" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1425 236.836V457.548" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1436.5 241.77V460.862" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1447.5 246.49V464.033" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1458 250.994V467.058" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1447.5 246.49H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1436.5 241.77H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1425 236.836H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1414.5 232.332H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1402 226.969H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1390.5 222.033H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1379 217.1H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1367.11 212H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1354 206.373H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1341.5 201.01H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1329.25 195.754H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1316 190.068H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1303 184.492H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1289.5 178.699H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1276 172.906H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1259.62 165.881H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1248 160.895H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1233.5 154.672H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1220 148.881H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1205 142.443H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1190 136.008H1468.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1468.5 128.5H1172.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M1127.5 115.5L1158 128.5H1172.5L1190 136.008L1259.62 165.881L1329.25 195.754L1341.5 201.01L1354 206.373L1367.11 212L1379 217.1L1390.5 222.034L1402 226.968L1414.5 232.331L1425 236.836L1436.5 241.77L1447.5 246.49L1458 250.995L1468.5 255.5"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1131 418.789L1127.5 115.5L1468.5 112.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1123.5 420V379V0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1176 376L1190 379.646L1240 392.665" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1229 392.665C1230 392.036 1232 391.157 1232 392.665C1232 393.5 1232 394.432 1232 394.432"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1226 392.666C1227 391.888 1229 390.798 1229 392.666C1229 394.534 1229 395.173 1229 395.259"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M1223.5 391.999C1224.33 391.276 1226 390.397 1226 392.665C1226 394.932 1226 395.809 1226 395.964"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M1220 390.507C1221.17 389.838 1223.5 389.199 1223.5 391.999C1223.5 394.799 1223.5 396.202 1223.5 396.553"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1217 389.999C1218 389.172 1220 388.114 1220 390.508C1220 392.901 1220 396.085 1220 397.378"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1214 388.5C1215 388 1217 387.6 1217 390C1217 392.4 1217 396.391 1217 398.086"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1211 387.457C1212 386.971 1214 386.499 1214 388.499C1214 390.499 1214 396.195 1214 398.792"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1207 387.457C1208 386.471 1211 385.457 1211 387.457C1211 389.457 1211 396.048 1211 399.5"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1204 386C1205 385.305 1207 384.623 1207 387.457C1207 390.292 1207 397.383 1207 400.574"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1200 385C1201.33 384.333 1204 383.6 1204 386C1204 388.4 1204 397.195 1204 401.293"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1195.15 383.551C1196.77 383.034 1200 382.6 1200 385C1200 387.4 1200 397.501 1200 402.252"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M1187.5 383.551C1188.17 383.034 1189.6 382 1192 382C1193.82 382 1194.72 382.555 1195.15 383.551C1195.42 384.194 1195.5 385.02 1195.5 386C1195.5 388 1195.5 398.387 1195.5 403.331"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M1162.5 385.43C1166.14 383.189 1172.5 380.354 1178.5 380.5C1183.42 380.619 1186.67 382.7 1187.5 383.551C1187.5 392.024 1187.5 396.774 1187.5 405.247"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M1369 407.5L1356 403.577L1343 399.654L1330.5 395.882L1284.5 382L1240 392.665L1232 394.433L1229 395.258L1226 395.965L1223.5 396.554L1220 397.379L1217 398.086L1214 398.793L1211 399.5L1207 400.574L1204 401.293L1200 402.252L1195.5 403.331L1187.5 405.248L1162.5 411.24L1131 418.789L1071 433.169L1049 438.442L1042.5 440"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1369.32 431.5L1380.5 434.663L1463 458" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M1369.32 441.5L1380.66 444.769L1392 448.037L1404 451.496L1414.5 454.522L1425 457.548L1436.5 460.862L1447.5 464.033L1458 467.059L1463 468.5"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1369.32 455.5L1463 481" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1369.87 473L1463 496.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1369 407.5L1369.32 431.5V441.5V455.5L1369.87 473L1369.97 481L1372.07 639L1373.5 747"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1463 502.5L1456 501L1460 876.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1369.97 481L1439 496.5L1442.85 822L1443.5 877" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1442.85 822L1363 817.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1363 747V817.5V832.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1373.5 746.999H1363L1288.54 742.499H1052L1051.04 645.499L1049 438.441" stroke="#C3BED1"
+        stroke-miterlimit="10"/>
+  <path  d="M1289.55 869V832.5L1288.54 742.5L1287.24 626.5L1284.5 382" stroke="#C3BED1"
+        stroke-miterlimit="10"/>
+  <path  d="M1373.5 832.5V865.82" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1373.5 832.5H1363H1289.55L1052 822V851.937" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1046.5 851.461L1044.5 645.73" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1042.5 440L1044.5 645.731" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1042.5 440L837 488.814" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M917.5 655.75L1044.5 645.73" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M837 593L915.5 583L917.5 655.75" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M837 731.5L919.5 728.5L917.5 655.75" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M837 731.5V833.361" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M770 667.5V731.5H837" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M770 667.5L767 604.5L837 593" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M837 593.001V488.814" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M703.5 671.5L770 667.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1377.5 865.5L1373.5 865.82" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M705.5 822L837 833.361L1046.5 851.462L1052 851.937L1289.55 869L1373.5 865.82"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M705.5 822.001L703.5 671.501L701.5 521.001L704.496 520.289L707 519.694L709 519.219L711.5 518.625L713.5 518.15L716 517.556L718 517.081L720 516.606L722 516.131L723 515.894L837 488.814"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M720 485V516.606" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M717.5 486.5L718 517.081" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M715 486.5L716 517.556" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M713.5 486.5V518.15" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M711 487L711.5 518.625" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M709 487V519.218" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M707 490.5V519.694" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M703.5 490L704.496 520.288" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M701.5 521V490.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M699.999 490.5L698.999 536.5V626.5L697.999 685L693.016 790.5" stroke="#C3BED1"
+        stroke-miterlimit="10"/>
+  <path  d="M698.001 492L694.727 636" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M684 496L684.5 495H686.5L687 493.5L690 494.5L690.5 492.5L692 493.5L692.5 492.5H693.5L694.5 492L695.5 492.5L697.5 490.5L698 492L700 490.5H701.5L702.5 489.5L703.5 490L706 488.5L707 490.5L709 487H711L713.5 486.5H715L716 485L717.5 486.5L718.5 484.5L720 485L722 484"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M691.5 822L693 792L693.008 791.25L693.017 790.5L694.726 636L695.5 566L694.5 492"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M692 493.5L691.5 822" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M690 494.5V822" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M686.5 495L687 822" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M684 496L683 822" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M673.5 822H683H687H690H691.5H705.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M673.5 822L1289.55 873.5L1424.5 869L1377.5 865.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M673.5 826L742 831.729L818.5 838.127L908 845.612L1013.5 854.435L1140 865.015L1229.5 872.5"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1140 865.016V872.501" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1013.5 854.436V872.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M908 845.611V872.499" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M818.5 838.127V872.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M742 831.729V872.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M673.5 872.5V863.5V857.5V826V822L673.647 812.5L675.5 692.961L680 536.5L681 496H684"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M673.5 863.5L656.5 861.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M673.647 812.5H661" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M675.5 692.961H661V812.5V856L673.5 857.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M680 536.5L660 533.5V682L676 680.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M647.5 528.553L680.4 520.289" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M680 533.501L656.5 529.923L647.5 528.553" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M647.5 528.552V509" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M580 499.445L647.5 508.999L680.914 499.499" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1123.5 379L1071 364.949" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M445.5 0L512.5 22.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M512.5 55.5V22.5V0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M520.5 57.8607V0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M543 0V32.25V66.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M543 32.25L812.5 125.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M812.5 156V125.5V0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M821 0V159.296" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M837 165.5V134V0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M837 134L881.5 149.5V0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M891 0V183.587" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1044.5 235L1042.5 0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path 
+        d="M336.5 0L512.5 55.5L520.5 57.8607L543 66.5L812.5 156L837 165.5L891 183.587L1044.5 235L1071 244V0"
+        stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M262.5 0L1103.5 270V0" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M233 0L152 119L1071 364.95" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M812.5 382.667V366L22 181.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M865 410.5V394.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M22 204.5L812.5 382.667L865 394.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M865 410.5L22 226.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M559 506L580 499.446L865 410.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M22 424.5L559 506" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M125 449L647.5 528.552" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M125 872.025V449" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M656.5 861.5L0 874.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M656.5 529.922V533.5V682" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M656.5 856V812.5V692.961" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M656.5 812.5L261 807" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M327 804.5V856" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M452.5 807V856" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M582 807V856" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M656.5 856H582H452.5H327H294H261" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M261 856V807V666" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M261 666L656.5 692.961" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M261 652.5V475.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M261 652.5L656.5 682" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M261 475.5L656.5 533.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M245.5 473V650.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M132 456.5L245.5 473" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M132 641.5V456.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M132 641.5L245.5 650.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M141.5 857L239 856" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M239 856V807" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M141.5 857V807" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M239 807H141.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M239 670.5V807" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M141.5 664L239 670.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M141.5 664V807" stroke="#C3BED1" stroke-miterlimit="10"/>
+  <path  d="M1071 433.169V399.059V364.949L722 468.5V484V516.13" stroke="#C3BED1" stroke-miterlimit="10"/>
+</svg>
+                            <svg class='vector animated what' viewBox="0 0 1440 872" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  d="M535 194.172V144.66" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M688 214.965V168.334" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M824.25 233.483V189.418" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M960.5 252V234" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1132.84 259V298.623" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1318.97 286V322.286" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M311 110L364.5 118.278L535 144.661L688 168.335L824.25 189.417L960.5 210.5V234L1132.84 259L1318.97 286L1446.5 304.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1446.5 338.5L1318.97 322.286L1132.84 298.623L919.5 271.5L960.5 252L824.25 233.483L688 214.966L535 194.172L364.5 171L311 162.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M231 301.05V252L311 110" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M251 303.063V259L300 180.5L311 162.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M251 259L300 263.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M300 180.5V263.5V307.994" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M311 110V162.5V309.101" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M364.5 314.483V303.062V170.999V118.277" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M364.5 303.062L390.5 305.927" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M904 255.5V271.5L901 271.127" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M472 267.5L538 207L904 255.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M437.5 263.5L472 267.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M390.5 305.927L437.5 263.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M472 282.5L437.5 278.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M391 317.151L437.5 278.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M390.5 305.928L391 317.152" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M437.5 263.5V278.5V321.83" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M472 267.5V282.5V325.302" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M495.5 262.383V286V294.517V303.063V310V318.834V327.667" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M538 226L495.5 262.383L472 282.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 233.482L495.5 270.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 250.482L495.5 286" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 259L495.5 294.517" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 267.5L495.5 303.063" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 276.018L495.5 310" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 286L495.5 318.833" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 294.518L495.5 327.667" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 303.982L505.5 328.673" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 312.5L516 329.73" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 321.83L527 330.836" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 226.311V233.483V242M540.5 332.195V321.83V242M540.5 242L495.5 278.5M540.5 250.483V259" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M538 226L540.5 226.311L826.5 261.865L871 267.398L901 271.127" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M901 271.127V319.799V368.472" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M871 267.398C871 270.172 871 271.727 871 274.501V365.454" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M826.5 261.865V269V277V316V352.5V360.975" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M540.5 233.482L826.5 269M540.5 242L826.5 277M540.5 250.482L826.5 286M540.5 259L826.5 294M540.5 267.5L826.5 303.017M540.5 276.017L826.5 311.017M540.5 286L826.5 319M540.5 294.517L826.5 327M540.5 303.982L826.5 335.5M540.5 312.5L826.5 343.5M540.5 321.83L826.5 352.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M871 274.5L901 278M871 283.5L901 287M871 291.5L901 295M871 299.5L901 303M871 308L901 311.5M871 316L901 319.5M871 324L901 327.5M871 331.5L901 335M871 341L901 344.5M871 348.5L901 352M871 356.5L901 360" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M911 331.5L941.677 335L1057.5 348.214L1087 351.58" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M941.677 335V372.565" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M911 369.478V360.975V331.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M911 360.975L957 365.728" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1009 372.565V367L964 363.5L937 372.094" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1087 379.501L1009 372.566H1006.5L964 368.473L949 373.303" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1087 351.581V379.5V387.189M1057.5 384.221V348.215" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1006.5 379.088V372.564" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M964 368.473V374.812" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M901 319.799L1177 348.499" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1177 348.5L1261.5 324" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1261.5 324L1433 344.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1177 365.453L1261.5 341" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1177 410.5L1261.5 389" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1177 348.5V365.453V410.5V425.793" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1261.5 324V341V389V433.179" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1357 351.58V399.302" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1261.5 341L1357 351.58L1433 360" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1261.5 389L1357 399.302L1433 407.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1433 344.5V360V407.5V437.5L1407 442V445.897" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1442.5 449L1407 445.897L1391 444.499L1261.5 433.179L1196.53 427.5L1177 425.793L1105 419.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1391 444.498V485.513" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1196.53 427.5V470.459" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1031.5 457.684L1196.53 470.458L1391 485.513L1442.5 489.499" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1105 389L1087 387.189L1057.5 384.22L1006.5 379.088L964 374.811L949 373.302L941.677 372.565L937 372.094L911 369.478L901 368.472L871 365.453L826.5 360.975L803.5 358.66L540.5 332.195L527 330.836L516 329.73L505.5 328.673L495.5 327.667L472 325.302L437.5 321.83L434.5 321.528L391 317.151L364.5 314.484L311 309.101L300 307.994L251 303.063L231 301.05L-8 277" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1105 442V419.5V389" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M803.5 358.66V417.057" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M434.5 386.528V321.527" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1105 442L803.5 417.057L434.5 386.529L-1 350.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1256.5 647H1269" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1256.5 681.5H1250H1243.5H1210H1206H1200H1160.5H1156H1151H1121.5H1108.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1303.5 483.5V487.5V496.5V559.5V627.5V630" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1289 630V538V483.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1296.5 483.5V630" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1373.5 489.5C1373.5 544.801 1373.5 575.806 1373.5 631.107" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1303.5 487.5L1442.5 497.5M1303.5 496.5L1443.5 506.5M1303.5 492.5L1443.5 502.5M1303.5 501L1443.5 511M1303.5 505L1443.5 515M1303.5 509.5L1443.5 519.5M1303.5 514.5L1443.5 524.5M1303.5 518.5L1443.5 528.5M1303.5 523.5L1443.5 533.5M1303.5 527.5L1443.5 537.5M1303.5 531.5L1443.5 541.5M1303.5 536.5L1443.5 545M1303.5 540.5L1442.5 550M1303.5 545L1443.5 554M1303.5 550L1442.5 558M1303.5 555L1442.5 562.5M1303.5 559.5L1442.5 567M1303.5 564L1442.5 571.5M1303.5 568.5L1442.5 576M1303.5 573L1442.5 580.5M1303.5 577L1442.5 584.5M1303.5 581.5L1442.5 589M1303.5 586L1442.5 592.5M1303.5 591L1442.5 597M1303.5 595L1442.5 601M1303.5 599.5L1442.5 605.5M1303.5 604L1442.5 610M1303.5 608.5L1442.5 614.5M1303.5 613L1442.5 619M1303.5 617.5L1442.5 623.5M1303.5 621.5L1442.5 627.5M1303.5 627.5L1442.5 632" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1269 636.5V632L1289 630H1296.5H1303.5L1373.5 631.107L1430 632V636.5L1426 636.44" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1269 636.5L1296.5 634.5L1426 636.44" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1296.5 714V634.5M1426 636.44V714" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1439.5 714H1426H1296.5L1269 709.5V647V636.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1256.5 538V647V681.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1250 537.648V681.499" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1243.5 681.501V537.299" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1210 535.488V681.499" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1206 681.5V534.773" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1200 534.949V681.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1160.5 532.816V681.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1156 681.499V532.572" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1151 532.303V681.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1121.5 530.711V681.501" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1105 529.818V641.38" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1041 526.363V640.103" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1006.5 524.5L1041 526.363L1105 529.819L1121.5 530.71L1151 532.303L1156 532.573L1160.5 532.816L1200 534.949L1206 534.773L1210 535.489L1243.5 537.298M1250 537.649L1256.5 538H1289" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1006.5 487.5L1289 506" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1105 442L1031.5 457.684L1006.5 463.019" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M965.5 467.501H985.5L1006.5 463.02" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1006.5 463.02V487.501V524.001V639.415" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M965.5 467.5V638.595" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M965.5 467.5L867 488.5H857" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M857 457.5L931 464L857 483" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M838.5 431L846.5 427.5L857 431" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M857 431V457.5C857 467.458 857 473.042 857 483V636.429" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M846.5 427.5V636.22" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M838.5 431V457.5V480.5V636.06" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M755.5 467.5L797.5 454.5L838.5 457.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M838.5 480.5L755.5 475.25" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M838.5 488.5L755.5 483" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M835.5 636L838.5 636.06L846.5 636.22L857 636.429L965.5 638.595L1006.5 639.414L1041 640.103L1105 641.38L1111 641.5L1111.5 645.5L1108.5 647" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M835.5 636V643" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M807.5 643V637.5L835.5 636" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M807.5 643H812H835.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1108.5 647L835.5 643" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1443.5 721H1108.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1108.5 729H1479.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1108.5 647V681.5V721V729V738" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1108.5 738L848.5 746.571" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M835.5 747L812 742V738V643M835.5 747V643M835.5 747L848.5 746.571" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M848.5 746.571L949 757L1457 743" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M1443.5 833.5L1054 768L1459.5 750" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M735.5 749.5C768 750.5 854.3 756.2 939.5 771C1024.7 785.8 1441 867.5 1441 867.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M755.5 740L812 738" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M755.5 452V467.5V475.25V483V510.5V647V724.5V740" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M607 502.5L755.5 510.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M607 647H755.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M607 724.5H755.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M755.5 740H607H592" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M592 740V728V707.5V699V688.5V679V668V659.5V649V639V629.5V619.5V610V599V589.5V580.5V570V559.5V550V540.5V529.5V520.5V510.5V501.68" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M607 740V724.5V647V502.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M607 502.5L592 501.679M150 477.5L157.5 477.91" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M150 746H157.5V477.91" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M92.5 757.5L114 774" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M114 774L103.5 786" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M103.5 786C151.925 839.502 179.075 869.498 227.5 923" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M92.5 757.5L47.5 758.476L13.5 759.213" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M47.5 786L61 798.477" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M3 815.504V801.5L61 798.477" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M103.5 786L61 798.477L3 815.505L-5.5 818" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M61 798.477V774" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M114 774H61" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M47.5 758.475L61 773.999" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M47.5 785.999V758.475" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M-5.5 786H47.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M92.5 757.5L735.5 749.5" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M150 477.5V643V730" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M150 740H592M592 501.679L157.5 477.91M157.5 488L592 510.5M592 520.5L157.5 497.5M157.5 510.5L592 529.5M157.5 521L592 540.5M157.5 529.5L592 550M157.5 540.5L592 559.5M157.5 554L592 570M157.5 564.5L592 580.5M157.5 575.5L592 589.5M157.5 587L592 599M157.5 599L592 610M157.5 610L592 619.5M157.5 622L592 629.5M157.5 632.562L592 639M157.5 643L592 649M157.5 654L592 659.5M157.5 665.5L592 668M157.5 677.5L592 679M157.5 688.5H592M157.5 699H592M157.5 710L592 707.5M157.5 721.539L591.5 718.5M157.5 733.198L592 728" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M92.5 402.5L755.5 452M150 477.5C127.545 476.621 114.955 476.129 92.5 475.25M150 746H92.5M150 643H92.5M92.5 730H150" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M92.5 757.5V730V643V475.25V364" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path  d="M13.5 759.213L16 357" stroke="#C3BED1" stroke-miterlimit="10"/>
+</svg> <svg class='vector animated what' viewBox="0 0 1440 872" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M89.7168 512.595V541.529L245.468 483.485V667.32H261.447V436.027L89.7168 512.595Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M89.541 541.701L222.641 550.346V655.318H245.293" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M222.639 550.351V546.117L245.466 540.295" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M245.467 483.48L261.27 477.834" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M245.467 524.944L261.446 520.533" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M245.293 566.228L261.448 563.229" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M245.467 607.86L261.27 606.096" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M245.467 649.148H261.446" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M261.445 436.027L445.467 463.02L382.254 481.016V523.005L406.661 525.651L405.608 663.791L261.445 667.32" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M265.484 667.316V436.553" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M261.27 477.834L382.254 492.124" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M261.445 520.711L406.31 533.59" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M261.445 563.229L406.134 571.873" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M261.27 606.096L405.783 610.506" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M261.445 649.322L405.608 648.439" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M444.941 463.194L985.945 306V388.743L382.078 523.002" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M387.523 479.604V521.592" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M422.639 469.543V513.825" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M461.619 458.428V505.357" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M505.869 445.553V495.481" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M712.547 385.219V449.261" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M840.025 348.695V421.206" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M904.996 329.289V406.563" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M978.395 307.936V390.502" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M406.135 525.473L439.322 517.887" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M439.318 510.299V668.904" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M439.321 522.115L436.16 522.821V666.783" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M410.873 664.672V527.59L430.54 523.709V666.26" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M405.426 663.783L439.315 667.135V696.774L760.125 740.351V438.842" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M985.77 306.174L1235.29 418.203V474.483L1092.35 492.654" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M985.77 388.74L1235.29 474.482" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M759.955 439.197L781.202 445.019V737.707" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M781.201 447.666L817.725 455.958V733.473" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M781.201 445.371L868.471 427.199L1094.11 486.125V489.83H1092.35L1093.23 641.731H1094.11V644.554H1096.57V645.965L868.998 641.025H817.373" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M787.521 449.251L804.378 446.781V452.956" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M823.346 636.792V442.901L866.717 434.08V636.086L823.346 636.792Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M869.875 636.091V434.262L919.217 447.141L919.568 637.502L869.875 636.091Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M926.77 637.504V448.906L968.736 459.668L969.263 638.915L926.77 637.504Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M976.461 461.428L977.339 639.263L1013.34 639.969V470.955L976.461 461.428Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1020.71 472.01L1021.41 640.495L1054.07 641.377L1053.37 480.478L1020.71 472.01Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1061.27 641.559L1060.57 481.719L1090.77 489.834L1091.3 642.441L1061.27 641.559Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M868.476 738.765L817.203 733.473L760.311 740.353" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M868.469 738.769L1086.91 720.244V667.67L867.767 669.963L817.898 668.728" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M439.318 696.777V700.835L760.304 755.527L817.547 746.353L868.645 753.233L1094.81 729.239V667.844" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1086.73 667.671H1098.67V645.971H1096.39" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M868.475 753.411V738.768" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M867.945 674.9L867.945 734.532" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M867.942 734.357L822.99 729.594V673.844L868.118 674.902" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M870.4 675.258V734.536L922.025 729.949V674.199L870.4 675.258Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M971.894 673.312L926.064 674.195V729.415L971.894 726.24V673.312Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M976.109 673.139V726.067L1017.37 723.244L1016.67 672.434L976.109 673.139Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1019.65 672.084L1020.18 722.718L1056.35 720.071V671.555L1019.65 672.084Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1059.69 671.732V719.896L1081.99 718.308V671.379L1059.69 671.732Z" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M868.824 669.964V641.207" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M768.385 441.846V739.297" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M768.562 671.203H781.03" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M768.385 639.971H781.203" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M768.385 536.764L781.203 538.528" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M781.201 543.469L817.725 547.703" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M781.201 640.855H817.549" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M781.201 669.96L817.725 669.605" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M439.144 667.32H416.141L305.166 666.262" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M305.166 666.262V680.376L416.492 700.488L439.32 700.841" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M416.492 700.484V667.492" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M978.744 390.859L1228.26 475.367" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M904.996 406.736L1166.46 483.304" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1066.01 416.262L926.416 442.373" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1133.27 439.375L1002.27 462.31" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1189.99 458.959L1060.92 477.484" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1094.11 486.125L1110.26 490.359" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M225.096 545.76V572.576L245.289 568.871" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M229.658 654.97V599.044L245.462 596.75" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1092.53 513.473L1169.08 529.88V556.873L1109.21 561.46V557.755L1092.53 555.109" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1092.71 544.697L1168.91 556.871" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1109.21 561.459V657.61" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1092.88 575.754L1109.21 577.871" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1093.05 614.742L1109.21 615.801" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1098.85 657.793H1136.78V662.733H1274.27V695.548L1094.81 709.132" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1136.95 659.203H1263.03V662.555" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1108.86 651.088L1142.4 651.794V653.381L1215.79 654.087L1297.09 655.146V670.847L1315.36 670.671V678.257H1359.25V686.549" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1359.25 686.543L1274.27 691.306" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1093.23 608.211L1297.27 629.205L1109.56 631.146" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1270.75 626.562V654.79" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1176.99 617.031V653.904" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1117.99 611.035V651.083" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1143.8 613.504V653.376" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1219.31 620.918V654.086" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1237.39 629.918V654.088" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1254.78 629.562V654.615" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1297.1 655.141V629.207" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M305.166 680.37L113.418 682.487L263.375 677.194V669.432L245.289 667.314" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M222.813 655.318H196.123V661.67H176.984V668.55H157.844V675.254L-3 679.841" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M-1.94336 682.845L26.1516 685.491L113.597 682.492" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M31.7715 685.318L37.2149 689.2L474.443 836.514L1108.34 742.48L1415.98 700.667L1369.44 697.844L1423 691.493L1341 687.612" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1347.66 699.602L1369.61 697.838" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M42.6562 684.962L59.1621 696.077L126.941 693.254V684.256L116.23 682.492" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M42.6562 684.955L59.1621 686.896L126.941 684.426" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M126.939 686.723C131.271 688.84 142.708 693.991 153.805 697.661C164.903 701.331 221.994 715.656 249.153 722.36L385.413 758.704L529.224 796.635L786.469 766.466L983.836 741.061" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M61.0918 697.133L129.398 694.311L135.544 695.898L66.5352 699.074" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M68.8164 699.782L138.351 696.783L155.208 702.076L84.6198 705.075" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M86.5566 705.776L158.374 702.953L177.865 708.422L103.414 711.421" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M106.572 712.481L181.726 709.129L202.973 714.774L124.658 718.656" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M128.17 719.894L207.011 715.66L230.541 721.659L148.188 726.598" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M151.352 727.652L235.637 722.889L262.502 730.651L177.339 736.297" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M180.848 737.532L267.942 731.887L298.495 740.708L208.767 747.059" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M213.33 748.469L304.463 741.941L339.582 751.468L245.464 759.231" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M250.73 761.172L347.131 753.762L387.518 764.7L288.483 773.874" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M295.861 776.344L395.423 766.641L445.643 780.049L340.462 791.34" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M348.012 793.815L453.543 782.348L511.841 798.755L402.797 812.34" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M412.279 815.511L522.728 801.75L598.76 818.157" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M618.073 815.163L542.393 800.343L633.877 788.17L711.314 801.402" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M723.078 799.461L649.68 786.406L726.414 776.879L799.812 788.17" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M811.055 786.579L738.359 775.464L803.68 767.701L875.498 776.875" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M882.168 775.991L812.457 766.464L871.281 758.525L945.557 766.641" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M949.95 765.937L879.713 757.821L929.406 751.117L1001.4 758.351" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1005.96 757.645L938.184 750.235L981.38 744.766L1050.91 750.94" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M59.1621 686.723V696.073" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1053.37 750.585L984.717 744.058L1027.03 739.471L1092.88 744.763" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1094.63 744.59L1030.72 738.768L1066.19 734.887L1128.7 739.65" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1131.33 739.295L1069.7 734.355L1102.19 730.65L1161.71 735.237" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1164.87 734.715L1104.82 730.128L1134.32 727.129L1190.86 731.187" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1195.78 730.478L1137.66 726.596L1164.52 723.773L1219.83 727.302" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1221.76 726.948L1167.51 723.243L1190.51 720.773L1243.54 724.125" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1245.82 723.772L1193.32 720.243L1239.5 714.598L1289.02 717.95" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1094.64 729.247L1348.02 699.608L1306.75 697.138L1371.2 690.963L1331.51 688.316" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1239.5 714.594L1261.8 711.771L1309.21 715.124" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1261.45 711.777L1280.42 709.836L1325.9 712.835" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1280.42 709.836L1297.8 707.719L1343.81 710.365" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1297.62 707.717L1315.18 705.6L1360.48 708.246" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1315.18 705.599L1374.88 698.189" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1335.9 703.129L1376.29 705.952" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1348.89 701.545L1386.47 704.544" stroke="#C3BED1" stroke-miterlimit="10"/>
+<path d="M1363.47 699.779L1400.35 702.779" stroke="#C3BED1" stroke-miterlimit="10"/>
+</svg>
+                       
+            <div class="image">
+                <svg class="second-vector vector" viewBox="0 0 1402 411" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="1">
+    <path d="M1401 112.759L1028.57 78.5L4.99997 201.5" stroke="#C3BED1"/>
+    <path d="M1401 142.371L1027.58 116.305L1.00003 211.327" stroke="#C3BED1"/>
+    <path d="M486.563 166.777L486.564 290.946" stroke="#C3BED1"/>
+    <path d="M169.838 195.688V271.516" stroke="#C3BED1"/>
+    <path d="M169 270.5L1401 410.5" stroke="#C3BED1"/>
+    <path d="M486.563 166.541L745.366 175.546V282.89L486.563 290.947" stroke="#C3BED1"/>
+    <path d="M486.563 189.764L281.986 203.034" stroke="#C3BED1"/>
+    <path d="M486.563 218.436L200.648 227.203" stroke="#C3BED1"/>
+    <path d="M486.563 241.658H344.838" stroke="#C3BED1"/>
+    <path d="M1398.53 156.824L819.309 185.734V277.439L745.365 278.386" stroke="#C3BED1"/>
+    <path d="M1027.58 78.627V116.304" stroke="#C3BED1"/>
+    <path d="M1395.17 0.5L634.451 99.0059V125.783" stroke="#C3BED1"/>
+    <path d="M1401 113.5L1401 47.5" stroke="#C3BED1"/>
+    <path d="M819.311 185.972L745.367 182.418" stroke="#C3BED1"/>
+  </g>
+</svg>
+            </div>
+        </section>
+
+
+       
+    <footer class="footer" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500">
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer__logo">
+                    <a href="https://www.dbcustomhomes.ca" rel="home" class='logo'>
+          <img src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Alchmeybuilders1.png" alt="Alchmeybuilders logo">
+        </a>
+                </div>
+
+                <div class="footer__title">
+                    <h2>Let&#8217;s Discuss <em>your Project</em></h2>
+                </div>
+
+                <div class="footer-contacts">
+                    <div class="footer-contacts-form">
+                        <script type="text/javascript">
+                            var gform;
+                            gform || (document.addEventListener("gform_main_scripts_loaded", function() {
+                                gform.scriptsLoaded = !0
+                            }), window.addEventListener("DOMContentLoaded", function() {
+                                gform.domLoaded = !0
+                            }), gform = {
+                                domLoaded: !1,
+                                scriptsLoaded: !1,
+                                initializeOnLoaded: function(o) {
+                                    gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o)
+                                },
+                                hooks: {
+                                    action: {},
+                                    filter: {}
+                                },
+                                addAction: function(o, n, r, t) {
+                                    gform.addHook("action", o, n, r, t)
+                                },
+                                addFilter: function(o, n, r, t) {
+                                    gform.addHook("filter", o, n, r, t)
+                                },
+                                doAction: function(o) {
+                                    gform.doHook("action", o, arguments)
+                                },
+                                applyFilters: function(o) {
+                                    return gform.doHook("filter", o, arguments)
+                                },
+                                removeAction: function(o, n) {
+                                    gform.removeHook("action", o, n)
+                                },
+                                removeFilter: function(o, n, r) {
+                                    gform.removeHook("filter", o, n, r)
+                                },
+                                addHook: function(o, n, r, t, i) {
+                                    null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+                                    var e = gform.hooks[o][n];
+                                    null == i && (i = n + "_" + e.length), gform.hooks[o][n].push({
+                                        tag: i,
+                                        callable: r,
+                                        priority: t = null == t ? 10 : t
+                                    })
+                                },
+                                doHook: function(n, o, r) {
+                                    var t;
+                                    if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[n][o] && ((o = gform.hooks[n][o]).sort(function(o, n) {
+                                            return o.priority - n.priority
+                                        }), o.forEach(function(o) {
+                                            "function" != typeof(t = o.callable) && (t = window[t]), "action" == n ? t.apply(null, r) : r[0] = t.apply(null, r)
+                                        })), "filter" == n) return r[0]
+                                },
+                                removeHook: function(o, n, t, i) {
+                                    var r;
+                                    null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function(o, n, r) {
+                                        return !!(null != i && i != o.tag || null != t && t != o.priority)
+                                    }), gform.hooks[o][n] = r)
+                                }
+                            });
+                        </script>
+                        <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_1'>
+                            <div class='gform_heading'>
+                                <h3 class="gform_title">Footer</h3>
+                                <p class='gform_description'></p>
+                            </div>
+                            <form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1' action='/?gad_source=1&#038;gclid=EAIaIQobChMIrIKagMmmhQMVh0p_AB3EsQAfEAAYASAAEgJSofD_BwE' data-formid='1'>
+                                <div class='gform-body gform_body'>
+                                    <ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'>
+                                        <li id="field_1_4" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_4"><label class='gfield_label gform-field-label' for='input_1_4'>Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                            <div class='ginput_container ginput_container_text'><input name='input_4' id='input_1_4' type='text' value='' class='large' placeholder='Name' aria-required="true" aria-invalid="false" /> </div>
+                                        </li>
+                                        <li id="field_1_2" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_2"><label class='gfield_label gform-field-label' for='input_1_2'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                            <div class='ginput_container ginput_container_email'>
+                                                <input name='input_2' id='input_1_2' type='text' value='' class='large' placeholder='Email' aria-required="true" aria-invalid="false" />
+                                            </div>
+                                        </li>
+                                        <li id="field_1_3" class="gfield gfield--type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_3"><label class='gfield_label gform-field-label' for='input_1_3'>Message<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                            <div class='ginput_container ginput_container_textarea'><textarea name='input_3' id='input_1_3' class='textarea small' placeholder='Message' aria-required="true" aria-invalid="false" rows='10' cols='50'></textarea></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send' onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }'
+                                    /> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=1&amp;description=1&amp;tabindex=0' />
+                                    <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+                                    <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+
+                                    <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+                                    <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjY5MTFmOWNiOGI1YjBkNjRjM2RkOTczNWU0MjZlZjZhIl0=' />
+                                    <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+                                    <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+                                    <input type='hidden' name='gform_field_values' value='' />
+
+                                </div>
+                                <input type="hidden" id="ct_checkjs_ad13a2a07ca4b7642959dc0c4c740ab6" name="ct_checkjs" value="0" /></form>
+                        </div>
+                        <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+                        <script type="text/javascript">
+                            /* <![CDATA[ */
+                            gform.initializeOnLoaded(function() {
+                                gformInitSpinner(1, 'https://www.dbcustomhomes.ca/content/plugins/gravityforms/images/', true);
+                                jQuery('#gform_ajax_frame_1').on('load', function() {
+                                    var contents = jQuery(this).contents().find('*').html();
+                                    var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;
+                                    if (!is_postback) {
+                                        return;
+                                    }
+                                    var form_content = jQuery(this).contents().find('#gform_wrapper_1');
+                                    var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;
+                                    var is_redirect = contents.indexOf('gformRedirect(){') >= 0;
+                                    var is_form = form_content.length > 0 && !is_redirect && !is_confirmation;
+                                    var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;
+                                    if (is_form) {
+                                        jQuery('#gform_wrapper_1').html(form_content.html());
+                                        if (form_content.hasClass('gform_validation_error')) {
+                                            jQuery('#gform_wrapper_1').addClass('gform_validation_error');
+                                        } else {
+                                            jQuery('#gform_wrapper_1').removeClass('gform_validation_error');
+                                        }
+                                        setTimeout(function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ }, 50);
+                                        if (window['gformInitDatepicker']) {
+                                            gformInitDatepicker();
+                                        }
+                                        if (window['gformInitPriceFields']) {
+                                            gformInitPriceFields();
+                                        }
+                                        var current_page = jQuery('#gform_source_page_number_1').val();
+                                        gformInitSpinner(1, 'https://www.dbcustomhomes.ca/content/plugins/gravityforms/images/', true);
+                                        jQuery(document).trigger('gform_page_loaded', [1, current_page]);
+                                        window['gf_submitting_1'] = false;
+                                    } else if (!is_redirect) {
+                                        var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();
+                                        if (!confirmation_content) {
+                                            confirmation_content = contents;
+                                        }
+                                        setTimeout(function() {
+                                            jQuery('#gform_wrapper_1').replaceWith(confirmation_content);
+                                            jQuery(document).trigger('gform_confirmation_loaded', [1]);
+                                            window['gf_submitting_1'] = false;
+                                            wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());
+                                        }, 50);
+                                    } else {
+                                        jQuery('#gform_1').append(contents);
+                                        if (window['gformRedirect']) {
+                                            gformRedirect();
+                                        }
+                                    }
+                                    jQuery(document).trigger('gform_post_render', [1, current_page]);
+                                });
+                            });
+                            /* ]]> */
+                        </script>
+
+                    </div>
+                    <div class="footer-contacts-info">
+                        <div class="footer-contacts-info__media">
+                            <h3>Contact us</h3>
+                            <p>1234 xyz Dr, xyz, ON L7T 1V2</p>
+                            <a href="tel:(905) 627-2226">(123) 456-789</a>
+                            <a href="mailto:info@dbcustomhomes.ca">info@abcdcustome.ca</a> <br>
+                            <a href="https://www.dbcustomhomes.ca/service-regions">We provide services to regions across Ontario.</a>
+                            <img src="C:\Users\binay\OneDrive\Desktop\ac\content\uploads\2021\12\Alchmeybuilders1.png" alt="">
+                        </div>
+                        <ul class="footer-contacts-info__social">
+                            <li><a href="https://www.facebook.com/dbcustomhomesinc/"> <svg width="5" height="12" viewBox="0 0 5 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M5 0C5 0 4.84376 0 4.16667 0C2.66927 0 1.66016 0.924107 1.66667 2.57143V4.28571H0V5.99999H1.66016L1.66667 12H3.33333V5.99999H4.75L5 4.28571H3.33333V2.8125C3.33333 1.71428 3.80974 1.71428 4.60287 1.71428H5V0Z"
+        fill="#fff"/>
+</svg>
+ </a></li>
+                            <li><a href="https://www.instagram.com/dbcustomhomes/"> <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M8.25 0H3.75C1.67925 0 0 1.67925 0 3.75V8.25C0 10.3208 1.67925 12 3.75 12H8.25C10.3208 12 12 10.3208 12 8.25V3.75C12 1.67925 10.3208 0 8.25 0ZM10.875 8.25C10.875 9.6975 9.6975 10.875 8.25 10.875H3.75C2.3025 10.875 1.125 9.6975 1.125 8.25V3.75C1.125 2.3025 2.3025 1.125 3.75 1.125H8.25C9.6975 1.125 10.875 2.3025 10.875 3.75V8.25Z"
+    fill="currentColor"/>
+  <path
+    d="M6 3C4.34325 3 3 4.34325 3 6C3 7.65675 4.34325 9 6 9C7.65675 9 9 7.65675 9 6C9 4.34325 7.65675 3 6 3ZM6 7.875C4.9665 7.875 4.125 7.0335 4.125 6C4.125 4.96575 4.9665 4.125 6 4.125C7.0335 4.125 7.875 4.96575 7.875 6C7.875 7.0335 7.0335 7.875 6 7.875Z"
+    fill="currentColor"/>
+  <path
+    d="M9.225 3.17475C9.44578 3.17475 9.62475 2.99578 9.62475 2.775C9.62475 2.55422 9.44578 2.37525 9.225 2.37525C9.00422 2.37525 8.82525 2.55422 8.82525 2.775C8.82525 2.99578 9.00422 3.17475 9.225 3.17475Z"
+    fill="currentColor"/>
+</svg>
+ </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav-wrapper">
+                    <p class="copy">© 2024 - Alchmeybuilders</p>
+                    <nav id="nav-main" class="nav-main" role="navigation" data-barba-prevent="all">
+                        <ul>
+                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-620">
+                                <a target="" href="https://www.dbcustomhomes.ca/terms-aprivacy-policy/">Terms & Conditions</a>
+                                <ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                if (document.querySelectorAll('[name^=ct_checkjs]').length > 0) {
+                    apbct_public_sendREST(
+                        'js_keys__get', {
+                            callback: apbct_js_keys__set_input_value
+                        }
+                    )
+                }
+            }, 0)
+        })
+    </script>
+    <link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=2.7.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=2.7.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=2.7.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=2.7.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_reset_css-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.7.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_formsmain_css-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.7.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_ready_class_css-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.7.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_browsers_css-css' href='https://www.dbcustomhomes.ca/content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.7.3' type='text/css' media='all' />
+    <script type="text/javascript" id="manifest-js-extra">
+        /* <![CDATA[ */
+        var themeVars = {
+            "home": "https:\/\/www.dbcustomhomes.ca",
+            "isHome": "1",
+            "root": "https:\/\/www.dbcustomhomes.ca\/wp-json\/"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/content/themes/david-bernstein-custom-homes/public/js/manifest.js?id=12e81a58c0144e86d891" id="manifest-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/content/themes/david-bernstein-custom-homes/public/js/app.js?id=15e54eba69d11e9bc964" id="app-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca" id="wp-dom-ready-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+        /* <![CDATA[ */
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://www.dbcustomhomes.ca/wordpress/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608" id="wp-a11y-js"></script>
+    <script type="text/javascript" defer='defer' src="https://www.dbcustomhomes.ca/content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.3" id="gform_json-js"></script>
+    <script type="text/javascript" id="gform_gravityforms-js-extra">
+        /* <![CDATA[ */
+        var gform_i18n = {
+            "datepicker": {
+                "days": {
+                    "monday": "Mo",
+                    "tuesday": "Tu",
+                    "wednesday": "We",
+                    "thursday": "Th",
+                    "friday": "Fr",
+                    "saturday": "Sa",
+                    "sunday": "Su"
+                },
+                "months": {
+                    "january": "January",
+                    "february": "February",
+                    "march": "March",
+                    "april": "April",
+                    "may": "May",
+                    "june": "June",
+                    "july": "July",
+                    "august": "August",
+                    "september": "September",
+                    "october": "October",
+                    "november": "November",
+                    "december": "December"
+                },
+                "firstDay": 1,
+                "iconText": "Select date"
+            }
+        };
+        var gf_legacy_multi = [];
+        var gform_gravityforms = {
+            "strings": {
+                "invalid_file_extension": "This type of file is not allowed. Must be one of the following:",
+                "delete_file": "Delete this file",
+                "in_progress": "in progress",
+                "file_exceeds_limit": "File exceeds size limit",
+                "illegal_extension": "This type of file is not allowed.",
+                "max_reached": "Maximum number of files reached",
+                "unknown_error": "There was a problem while saving the file on the server",
+                "currently_uploading": "Please wait for the uploading to complete",
+                "cancel": "Cancel",
+                "cancel_upload": "Cancel this upload",
+                "cancelled": "Cancelled"
+            },
+            "vars": {
+                "images_url": "https:\/\/www.dbcustomhomes.ca\/content\/plugins\/gravityforms\/images"
+            }
+        };
+        var gf_global = {
+            "gf_currency_config": {
+                "name": "U.S. Dollar",
+                "symbol_left": "$",
+                "symbol_right": "",
+                "symbol_padding": "",
+                "thousand_separator": ",",
+                "decimal_separator": ".",
+                "decimals": 2,
+                "code": "USD"
+            },
+            "base_url": "https:\/\/www.dbcustomhomes.ca\/content\/plugins\/gravityforms",
+            "number_formats": [],
+            "spinnerUrl": "https:\/\/www.dbcustomhomes.ca\/content\/plugins\/gravityforms\/images\/spinner.svg",
+            "version_hash": "2c315ab9a5e1493f664ffb63a6b52098",
+            "strings": {
+                "newRowAdded": "New row added.",
+                "rowRemoved": "Row removed",
+                "formSaved": "The form has been saved.  The content contains the link to return and complete the form."
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" defer='defer' src="https://www.dbcustomhomes.ca/content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.3" id="gform_gravityforms-js"></script>
+    <script type="text/javascript" defer='defer' src="https://www.dbcustomhomes.ca/content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.7.3" id="gform_placeholder-js"></script>
+    <script type="text/javascript" defer='defer' src="https://www.dbcustomhomes.ca/content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=bc402317bb1b621c1f695fe582d28717" id="gform_gravityforms_utils-js"></script>
+    <script type="text/javascript" defer='defer' src="https://www.dbcustomhomes.ca/content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=79e6346cf824ee59c1f023f916789c24" id="gform_gravityforms_theme_vendors-js"></script>
+    <script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+        /* <![CDATA[ */
+        var gform_theme_config = {
+            "common": {
+                "form": {
+                    "honeypot": {
+                        "version_hash": "2c315ab9a5e1493f664ffb63a6b52098"
+                    }
+                }
+            },
+            "hmr_dev": "",
+            "public_path": "https:\/\/www.dbcustomhomes.ca\/content\/plugins\/gravityforms\/assets\/js\/dist\/"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" defer='defer' src="https://www.dbcustomhomes.ca/content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=9c9598c0c1b63e5624987254d79ea8ef" id="gform_gravityforms_theme-js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        gform.initializeOnLoaded(function() {
+            jQuery(document).on('gform_post_render', function(event, formId, currentPage) {
+                if (formId == 1) {
+                    if (typeof Placeholders != 'undefined') {
+                        Placeholders.enable();
+                    }
+                }
+            });
+            jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit) {})
+        });
+        /* ]]> */
+    </script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        gform.initializeOnLoaded(function() {
+            jQuery(document).trigger('gform_post_render', [1, 1])
+        });
+        /* ]]> */
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 6.1 on 2024-04-03 19:29:22 -->
